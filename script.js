@@ -1,16 +1,18 @@
-addButton.onclick = function () {
+document.getElementById('addButton').onclick = function () {
 
-    /*let li = document.createElement('li');
-    li.className = 'li';
-    li.textContent = input.value;
-    list.append(li);*/
+    inputTask = document.getElementById('inputTask');
+    tableTasks = document.getElementById('tableTasks');
 
+    if(!inputTask.value) return;
+    
     let tr = document.createElement('tr');
-    table.append(tr);
+    tableTasks.append(tr);
 
     let td = document.createElement('td');
     td.className = 'td';
-    td.textContent = input.value;
+    td.textContent = inputTask.value;
     tr.append(td);
+
+    inputTask.value = '';
 
 } 
