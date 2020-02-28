@@ -1,4 +1,4 @@
-#input {
+#inputTask {
     width: 250px;
 }
 
@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 
-#table {
+#tableTasks {
     margin: 10px 0px;
     border-collapse: collapse;
 }
