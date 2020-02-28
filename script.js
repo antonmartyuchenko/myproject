@@ -1,7 +1,7 @@
-document.getElementById("addButton").onclick = function () {
+document.getElementById('addButton').onclick = function () {
 
-    inputTask = document.getElementById("inputTask");
-    tableTasks = document.getElementById("tableTasks");
+    inputTask = document.getElementById('inputTask');
+    tableTasks = document.getElementById('tableTasks');
 
     if(!inputTask.value) return;
     
@@ -13,6 +13,6 @@ document.getElementById("addButton").onclick = function () {
     td.textContent = inputTask.value;
     tr.append(td);
 
-    inputTask.value = "";
+    inputTask.value = '';
 
 } 
